@@ -85,7 +85,7 @@ function createEditBtn() {
 };
 
 function editAcc() {
-    id = parseInt(this.className[0]); // uzima prvi className??
+    id = parseInt(this.className[0]);
     formId.value = db[id].id;
     formName.value = db[id].name;
     formDeposit.value = db[id].deposit;
