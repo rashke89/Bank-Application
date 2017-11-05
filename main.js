@@ -34,11 +34,11 @@ bankapp.addEventListener('click',function(){
     var one = JSON.stringify(db);
     localStorage.setItem('baza',one);
 });
-addEventListener('unload',function(){ //UNLOAD kada zatvara stranicu
+addEventListener('unload',function(){
     var one = JSON.stringify(db);
     localStorage.setItem('baza',one);
 })
-addEventListener('load',function(){// LOAD kada otvara stranicu
+addEventListener('load',function(){
     var aaa = JSON.parse(localStorage.getItem('baza'));
     db = aaa;
     displayTable();
